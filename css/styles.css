@@ -1,17 +1,24 @@
+@import url(content/header.css);
+@import url(content/lateral-menu.css);
+@import url(content/top-section.css);
+@import url(content/videos.css);
+@import url(content/footer.css);
+
+
 *,
 *::before,
 *::after {
-    --azul-escuro: #154580;
-    --azul-medio: #3970BE;
-    --azul-claro: #E5F1FF;
-    --cinza-text: #444444;
-    --cinza-claro: #ECECEC;
+    --dark-blue: #154580;
+    --medium-blue: #3970BE;
+    --light-blue: #E5F1FF;
+    --gray-text: #444444;
+    --light-gray: #ECECEC;
     box-sizing: border-box;
 }
 
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    background-color: var(--azul-claro);
+    background-color: var(--light-blue);
     position: relative;
     width: 100%;
     height: 100vh;
@@ -22,309 +29,9 @@ body {
     text-align: center;
 }
 
-/* CABEÇALHO */
-
-.header__container {
-    background-color: white;
-    height: 80px;
-    width: 100%;
-    padding: 0 25px;
-}
-
-.logo__item {
-    background-image: url(../img/header/Logo.png);
-    background-repeat: no-repeat;
-    padding: 15px 65px;
-    cursor: pointer;
-}
-
-.search__input {
-    width: 260px;
-    height: 32px;
-    border: 1px solid rgb(211, 211, 211);
-    font-size: 16px;
-    padding: 3px 8px;
-    border: 1px solid rgb(211, 211, 211);
-}
-
-.search__label {
-    background-image: url(../img/header/search.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid rgb(211, 211, 211);
-    background-color: #F9F9F9;
-    border-left: none;
-    padding: 8px 18px 5px;
-    cursor: pointer;
-}
-
-.header__audio {
-    background-image: url(../img/header/mic.png);
-    padding: 20px;
-    display: none;
-}
-
-.header__videos {
-    background-image: url(../img/header/video_call.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 20px;
-}
-
-.header__apps {
-    background-image: url(../img/header/apps.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 13px 30px 13px 13px;
-}
-
-.header__notification {
-    background-image: url(../img/header/notifications.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 13px 30px 13px 13px;
-}
-
-.header__avatar {
-    background-image: url(../img/header/Avatar.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 13px 30px 13px 13px;
-}
-
-/* MENU LATERAL */
-
-.menu__container {
-    background-color: var(--azul-escuro);
-    font-size: 14px;
-}
-
-.menu__items:hover {
-    background-color: var(--azul-medio);
-    transition: .5s;
-}
-
-.icon__inicio::before {
-    content: url(../img/menu/home.png);
-}
-
-.icon__explorer::before {
-    content: url(../img/menu/explore.png);
-}
-
-.icon__shorts::before {
-    content: url(../img/menu/shorts.png);
-}
-
-.icon__inscricoes::before {
-    content: url(../img/menu/subscriptions.png);
-}
-
-.icon__biblioteca::before {
-    content: url(../img/menu/video_library.png);
-}
-
-.icon__historico::before {
-    content: url(../img/menu/history.png);
-}
-
-.icon__clock::before {
-    content: url(../img/menu/history_toggle_off.png);
-}
-
-.icon__like::before {
-    content: url(../img/menu/thumb_up_alt.png);
-}
-
-.icon__alura::before {
-    content: url(../img/menu/Avatar_Alura.png);
-}
-
-.icon__gaveta::before {
-    content: url(../img/menu/Avatar_Gaveta.png);
-}
-
-.icon__ballerini::before {
-    content: url(../img/menu/Avatar_Rafa.png);
-}
-
-.icon__iamarino::before {
-    content: url(../img/menu/Avatar_Atila.png);
-}
-
-.icon__souto::before {
-    content: url(../img/menu/Avatar_Souto.png);
-}
-
-.icon__nerd::before {
-    content: url(../img/menu/Avatar_Jovem_Nerd.png);
-}
-
-.icon__deschamps::before {
-    content: url(../img/menu/Avatar_Deschamps.png);
-}
-
-.icon__show::before {
-    content: url(../img/menu/keyboard_arrow_down.png);
-}
-
-.icon__videos::before {
-    content: url(../img/menu/videos.png);
-}
-
-.icon__filmes::before {
-    content: url(../img/menu/filmes.png);
-}
-
-.icon__games::before {
-    content: url(../img/menu/games.png);
-}
-
-/* section top */
-
-.top__section__container {
-    height: 63px;
-    color: white;
-    font-size: 16px;
-    background-color: var(--azul-claro);
-    padding: 0 20px;
-    position: fixed;
-    top: 80px;
-    right: 0;
-    left: 0;
-}
-
-.top__item {
-    color: var(--cinza-text);
-    font-size: 16px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 8px 20px;
-    cursor: pointer;
-}
-
-.top__item:hover {
-    color: white;
-    background-color: var(--azul-escuro);
-    transition: .5s;
-}
-
-/* SEÇÃO VÍDEOS */
-
-.videos__container {
-    color: black;
-    padding: 153px 20px 10px 20px;
-}
-
-.videos__item:hover {
-    transform: scale(1.3);
-    background-color: var(--azul-claro);
-    z-index: 2;
-    transition: .5s;
-}
-
-.descricao-video h3 {
-    font-weight: 700;
-    color: #444444;
-}
-
-.descricao-video p {
-    font-size: 14px;
-    color: #444444;
-}
-
-/* RODAPÉ */
-
-.footer__container {
-    width: 100%;
-    height: 875px;
-    color: var(--cinza-text);
-    line-height: 1.5;
-    font-size: 16px;
-    background-color: white;
-}
-
-.footer__title {
-    color: var(--azul-medio);
-    font-weight: bold;
-    padding: 10px 0 20px 0;
-}
-
 @media(min-width: 834px) {
 
     body {
         height: 100vh;
     }
-
-    /* ESTILOS DO MENU LATERAL */
-
-    .menu__container {
-        font-size: 16px;
-    }
-
-    .menu__list {
-        padding-top: 15px;
-    }
-
-    .menu__list li {
-        width: 100%;
-    }
-
-    /* ESTILOS DA section top */
-
-    .top__section__container {
-        border-top: var(--azul-medio) 1px solid;
-        border-bottom: var(--azul-medio) 1px solid;
-        width: auto;
-        left: 82px;
-    }
-
-    /*ESTILOS SEÇÃO VÍDEOS */
-
-    .videos__container {
-        padding-left: 90px;
-        padding-right: 17px;
-    }
-
-    .videos__item:hover {
-        transform: scale(1.3);
-    }
-
-    /* ESTILOS RODAPÉ */
-
-    .footer__container {
-        height: 420px;
-        padding-left: 74px;
-    }
-
-}
-
-@media(min-width: 1440px) {
-
-    /* SEÇÃO top */
-
-    .top__section__container {
-        left: 247px;
-    }
-
-    /* ESTILOS DO MENU LATERAL */
-
-    .menu__list {
-        border-bottom: 1.5px solid var(--azul-medio);
-    }
-
-    /* ESTILOS VIDEOS */
-
-    .videos__container {
-        padding-right: 10px;
-        padding-left: 248px;
-    }
-
-    /* ESTILOS RODAPÉ */
-
-    .footer__container {
-        padding-left: 240px;
-        height: 225px;
-    }
-
 }
