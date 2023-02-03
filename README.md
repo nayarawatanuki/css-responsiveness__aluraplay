@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Aluraplay" src="https://raw.githubusercontent.com/nayarawatanuki/css-responsiveness__aluraplay/main/img/readme/Aluraplay.png"/>
+  <img alt="Aluraplay" src="https://raw.githubusercontent.com/nayarawatanuki/css-responsiveness__aluraplay/main/img/readme/Aluraplay.png#vitrinedev"/>
 </h1>
 
 ### Índice
@@ -18,7 +18,7 @@
 O projeto **[AluraPlay](https://nayarawatanuki.github.io/css-responsiveness__aluraplay/)**, é uma proposta de página web para videos da plataforma [Alura](https://www.alura.com.br/).
 Esse projeto contém o objetivo de aprender a fazer uma página totalmente responsiva, suportando todas as resoluções e dispositivos. E também aprofundar os conhecimentos da configuração `display: flex`, ou seja `flexbox`.
 
-</br>Desenvolvido para o curso de **CSS: FLEXBOX E LAYOUTS RESPONSIVOS** da platforma [Alura](https://www.alura.com.br/).
+</br>Desenvolvido para o curso de **CSS: FLEXBOX E LAYOUTS RESPONSIVOS** da plataforma [Alura](https://www.alura.com.br/).
 
 </br>
 
